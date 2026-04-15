@@ -2,7 +2,7 @@
 
 Este proyecto es una API REST desarrollada con Spring Boot.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Crear usuario
 - Listar usuarios
@@ -11,16 +11,31 @@ Este proyecto es una API REST desarrollada con Spring Boot.
 - Validaciones
 - Manejo de errores
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - Java
 - Spring Boot
 - MySQL
 - JPA (Hibernate)
 
-## 📡 Endpoints
+## Endpoints
 
 POST /usuarios  
 GET /usuarios  
 PUT /usuarios/{id}  
 DELETE /usuarios/{id}
+##  Pruebas con Postman
+
+Ejemplo de creación de usuario:
+
+POST /usuarios
+
+{
+  "nombre": "Carlos",
+  "correo": "carlos@email.com"
+}
+##  Arquitectura
+
+- Controller → Manejo de peticiones
+- Service → Lógica de negocio
+- Repository → Acceso a datos
